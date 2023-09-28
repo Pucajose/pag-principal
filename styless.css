@@ -1,0 +1,474 @@
+body{
+    /* width: 100%; */
+    background: white;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+.caja__superior{
+    display: flex;
+}
+.caja__perfil{
+    width: 200px;
+    height: 200px;
+    background: #5a5a5a;
+    position: relative; 
+  
+}
+.foto__perfil{
+    background: #5a5a5a;
+    border-radius: 50%;  
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 45px; 
+    background-image: url(../imagenes/images.1.png);
+    background-size: cover;
+    background-repeat: no-repeat;/*evita que se repita el fondo*/
+    background-position: center;
+}
+.perfil{
+    position: absolute;
+    bottom: 65px;
+    left: 70px;
+}
+
+#menu-list{
+    background: #f2f2f2;
+    color: white;
+    position: fixed;
+    top: 120px;
+    width: 300px;
+    height: 60px;
+    display: none;
+    z-index: 1;
+}
+.menu__botton{
+    position: absolute;
+    top: 0px;
+    left: 280px;
+}
+.menu__botton1{
+    position: absolute;
+    top: 20px;
+    left: 280px;
+}
+.menu__botton2{
+    position: absolute;
+    top: 40px;
+    left: 280px;
+}
+/*creamos la caja de busqueda y sus componentes*/
+.caja__busqueda{
+    width: 1320px;
+    height: 200px;
+    background: #6b6b6b;
+    display: flex;
+    position: relative;
+    z-index: 0;
+}
+.caja__busqueda p{
+    font-size: 20px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 0px;
+}
+.caja__busqueda h2{
+    position: absolute;
+    bottom: 90px;
+    left: 400px;
+}
+.caja__busqueda h4{
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.caja__busqueda h6{
+    font-size: 15px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;   
+}
+.caja__busqueda input{
+    position: absolute;
+    background: #dddbdb;
+    right: 0px;
+    bottom: 0px;
+    width: 500px;
+    height: 40px;
+}
+/*creamos las cajas para los servidores, canalaes, chat y personas activas*/
+.caja__inferior{
+    display: flex;
+}
+/*caja de servidores*/
+.caja__servidor{
+    background: #313131;
+    width: 200px;
+    height: 535px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.caja__servidor i{
+    margin-bottom: 40px;
+    color: white;
+    bottom: -20px;
+    position: relative;
+    cursor: pointer;
+}
+  .caja__servidor h2 {
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #f2f2f2;
+  }
+  
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #313131;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    top: 0; /* Ajusta la posición superior a 0 para alinear con el botón */
+    left: 100%; /* Ajusta la posición izquierda para abrir a la derecha */
+    min-width: 200px; /* Ajusta el ancho del menú según tus necesidades */
+    z-index: 2;
+}
+  
+.menu-desplegable li {
+    margin: 5px 0;
+    cursor: pointer;
+    border: solid white;
+    color: #f2f2f2;
+
+}
+.menu-desplegable h4{
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin: 0px;
+    color: #f2f2f2;
+
+
+} 
+.menu-desplegable p{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0%;
+    color: #f2f2f2;
+}
+/*menu desplegable 2 */
+.menu-plantilla {
+    display: none;
+    position: absolute;
+    background-color: #757373;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    top: 140px;/* Ajusta la posición superior a 0 para alinear con el botón */
+    left: 200px;/* Ajusta la posición izquierda para abrir a la derecha */
+    min-width: 200px; /* Ajusta el ancho del menú según tus necesidades */
+    height: 200px;
+    z-index: 3;
+}
+.menu-plantilla li {
+    margin: 5px 0;
+    cursor: pointer;
+    border: solid white;
+    color: #f2f2f2;
+
+}
+.menu-plantilla h4{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 0px;
+    color: #f2f2f2;
+
+} 
+.menu-plantilla p{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0%;
+    color: #f2f2f2;
+}
+/*menu desplegable 3*/
+.menu-perso-amigos{
+    display: none;
+    position: absolute;
+    background-color: #757373;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    top: 360px;/* Ajusta la posición superior a 0 para alinear con el botón */
+    left: 200px;/* Ajusta la posición izquierda para abrir a la derecha */
+    min-width: 200px; /* Ajusta el ancho del menú según tus necesidades */
+    height: 154px;
+    z-index: 3;
+}
+.menu-perso-amigos li {
+    margin: 5px 0;
+    cursor: pointer;
+    border: solid white;
+    color: #f2f2f2;
+
+}
+.menu-perso-amigos h4{
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: 0px;
+    color: #f2f2f2;
+    position: absolute;
+
+} 
+.menu-perso-amigos p{
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0%;
+    color: #f2f2f2;
+    position: absolute;
+    top: 21px;
+}
+.menu-perso-amigos label{
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 90px;
+    position: absolute;
+}
+
+.menu-perso-amigos input{
+    position: absolute;
+    top: 104px;
+    left: 8px;
+}
+.menu-button-A{
+    position: absolute;
+    top: 140px;
+}
+.menu-button-B{
+    position: absolute;
+    top: 140px;
+    right: 0px;
+}
+/*menu desplegable 4*/
+.menu-perso-comunidad{
+    display: none;
+    position: absolute;
+    background-color: #757373;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    top: 360px;/* Ajusta la posición superior a 0 para alinear con el botón */
+    left: 200px;/* Ajusta la posición izquierda para abrir a la derecha */
+    min-width: 200px; /* Ajusta el ancho del menú según tus necesidades */
+    height: 154px;
+    z-index: 3;
+}
+.menu-perso-comunidad li {
+    margin: 5px 0;
+    cursor: pointer;
+    border: solid white;
+    color: #f2f2f2;
+
+}
+.menu-perso-comunidad h4{
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin: 0px;
+    color: #f2f2f2;
+    position: absolute;
+
+} 
+.menu-perso-comunidad p{
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 0%;
+    color: #f2f2f2;
+    position: absolute;
+    top: 21px;
+}
+.menu-perso-comunidad label{
+    font-family: sans-serif;
+    font-size: 13px;
+    top: 90px;
+    position: absolute;
+}
+
+.menu-perso-comunidad input{
+    position: absolute;
+    top: 104px;
+    left: 8px;
+}
+.menu-button-C{
+    position: absolute;
+    top: 140px;
+}
+.menu-button-D{
+    position: absolute;
+    top: 140px;
+    right: 0px;
+}
+/* creamos el explorador de servidores */
+.menu-busqueda-serv {
+    display: none;
+    position: absolute;
+    background-color: #757373;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    top: 0; /* Ajusta la posición superior a 0 para alinear con el botón */
+    left: 100%; /* Ajusta la posición izquierda para abrir a la derecha */
+    min-width: 400px; /* Ajusta el ancho del menú según tus necesidades */
+    height: 513px;
+    z-index: 3;
+}
+.menu-busqueda-serv h4{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    color: #f2f2f2;
+} 
+.menu-busqueda-serv p{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0%;
+    color: #f2f2f2;
+}
+.menu-busqueda-serv p1{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0%;
+    color: #f2f2f2;
+    position: absolute;
+    top: 340px;
+}
+.menu-busqueda-serv input{
+    position: absolute;
+    top: 90px;
+    left: 8px;
+    height: 30px;
+    cursor: pointer;
+    width: 400px;
+    border: black;
+    background: #464646;
+}
+
+/*creamos el explorador de descarga*/
+.menu-descarga {
+    display: none;
+    position: absolute;
+    background-color: #757373;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    top: 0; /* Ajusta la posición superior a 0 para alinear con el botón */
+    left: 100%; /* Ajusta la posición izquierda para abrir a la derecha */
+    min-width: 400px; /* Ajusta el ancho del menú según tus necesidades */
+    height: 513px;
+    z-index: 3;
+}
+.menu-descarga h4{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    color: #f2f2f2;
+}
+.menu-descarga p{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0%;
+    color: #f2f2f2;
+}
+/*Creamos la caja de canales y sus contenidos*/
+.caja__canal{
+    background: #313131;
+    width: 300px;
+    height: 535px;
+    position: relative;
+    z-index: 1;
+}
+.caja__canal h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #f2f2f2;
+}
+.caja__canal{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #f2f2f2;
+}
+.foto__canal{
+    background: red;
+    height: 300px;
+    width: 296px;
+    position: absolute;  
+    background-image: url(../imagenes/images3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;/*evita que se repita el fondo*/
+    background-position: center;
+}
+/*Creamos la estructura que va a contener los chat*/
+.caja__chat{
+    width: 800px;
+    height: 535px;
+    background: #f2f2f2;
+    z-index: 0;
+    position: relative;
+}
+.caja__chat input{
+    position: absolute;
+    bottom: 0px;
+    width: 700px;
+    height: 40px;
+    cursor: pointer;
+}
+.caja__chat button{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 44px;
+    width: 95px;
+}
+/*creamos la caja que contiene el estado actual de los amigos*/
+.caja__estado{
+    position: relative;
+    width: 218px;
+    background: #313131;
+}
+.caja__estado h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #f2f2f2;
+}
+.caja__estado h6{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0%;
+    color: #f2f2f2;
+}
+.caja__estado p{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 0%;
+    color: #f2f2f2;
+    position: absolute;
+    top: 100px;
+}

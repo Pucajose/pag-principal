@@ -1,0 +1,108 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <!--caja donde se ecuentra el perfil y la seccion de busqueda-->
+    <div class="caja__superior">
+        <div class="caja__perfil">
+            <div class="foto__perfil"></div>
+            <div class="perfil">
+                <button id="menu-button">Perfil</button>
+                <ul id="menu-list">
+                    <li><a href="#">Usuario: </a></li>
+                    <button class="menu__botton">editar</button>
+                    <li><a href="#">Nombre completo: </a></li>
+                    <button class="menu__botton1">editar</button>
+                    <li><a href="#">Correo Electronico: </a></li>
+                    <button class="menu__botton2">editar</button>
+                </ul>
+            </div>
+        </div>
+        <div class="caja__busqueda">
+            <p>"La comunicación en la web no solo une a personas a través de distancias geográficas, sino que también fortalece la amistad a pesar de los kilómetros que las separen, recordándonos que la verdadera amistad no conoce fronteras en el mundo digital"</p>
+            <h2>¡BIENVENIDOS A CONVO WEB!</h2>
+            <h4>AÑADIR AMIGO</h4>
+            <h6>Puedes añadir amigos con su nombre de usuario de CONVO WEB</h6>
+            <input type="text" placeholder="Puedes añadir amigos con su nombre de usuario de CONVO WEB">
+        </div>
+    </div>
+    <!--caja donde se encuentra los servidores,canales, chat y amigos activos-->
+    <div class="caja__inferior">
+        <div class="caja__servidor">
+            <h2>Servidores</h2>
+            <i class="fa-solid fa-plus" id="icono-menu"> Agregar servidor</i>
+            <i class="fa-regular fa-compass" id="icono-explore"> Explorar   Servidores</i>
+            <i class="fa-solid fa-cloud-arrow-down" id="icono-descarga"> Mis descargas</i>
+            <ul class="menu-desplegable" id="menu-desplegable">
+                <h4>crear un servidor</h4>
+                <p>tu servidor es donde te reunes con tus amigos. Crea el tuyo y empieza a hablar</p>
+                <li id="crear-plantilla">Crear mi plantilla</li>
+            </ul>
+            <!--menu desplegable p/crear las plantillas del servidor-->
+            <ul class="menu-plantilla" id="menu-plantilla">
+                <h4>Háblanos un poco de tu servidor</h4>
+                <p>¿Para quien va dirigido el servidor?</p>
+                <li id="crear-servidor">Para mis amigos y yo</li>
+                <li id="crear-servidor-com">Para un club o una comunidad</li>
+                <button class="menu-button-atras">Atras</button>
+            </ul>
+            <!--menu desplegable p/crear un servidor para amigos-->
+            <ul class="menu-perso-amigos" id="menu-perso-amigos">
+                <h4>Personaliza tu servidor</h4>
+                <p>Dale una personalidad propia a tu nuevo servidor con un nombre.</p>
+                <label for="">NOMBRE DEL SERVIDOR</label>
+                <input type="text" placeholder="El servidor de Usuario">
+                <button class="menu-button-A">Atras</button>
+                <button class="menu-button-B">CREAR</button>
+            </ul>
+            <!--menu desplegable p/crear un servidor para comunidad-->
+            <ul class="menu-perso-comunidad" id="menu-perso-comunidad">
+                <h4>Personaliza tu servidor</h4>
+                <p>Dale una personalidad propia a tu nuevo servidor con un nombre.</p>
+                <label for="">NOMBRE DEL SERVIDOR</label>
+                <input type="text" placeholder="El servidor de Usuario">
+                <button class="menu-button-C">Atras</button>
+                <button class="menu-button-D">CREAR</button>
+            </ul>
+            <!-- menu desplegable p/buscar servidores -->
+            <ul class="menu-busqueda-serv" id="menu-busqueda-serv">
+                <h4>Inicio</h4>
+                <p>Encuentra comunidades en CONVO WEB</p>
+                <input type="text" placeholder="Explora servidores">
+                <p1>Los servidores apareceran en este apartado</p1>
+            </ul>
+            <!-- menu desplegable p/buscar servidores -->
+            <ul class="menu-descarga" id="menu-descarga">
+                <h4>Mis descargas</h4>
+                <p>Aqui encontraras tus descargar</p>
+                
+            </ul>
+            
+        </div>
+        <div class="caja__canal">
+            <h2>Canales</h2>
+            <p>Unete a un servidor o crea el tuyo y los canales apareceran aqui</p>
+            <div class="foto__canal"></div>
+            
+        </div>
+        <div class="caja__chat">
+         <input type="text" placeholder="Comenta tus ideas y disfruta del momento!"> <button>ENVIAR</button>
+        </div>
+        <div class="caja__estado">
+            <h2>Activo ahora</h2>
+            <h6>Por ahora está todo tranquilo...</h6>
+            <p>Cuando un amigo empiece una actividad,
+                ¡te lo mostraremos aquí!
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
